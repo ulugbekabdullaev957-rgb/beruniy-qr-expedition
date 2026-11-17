@@ -1,69 +1,331 @@
-<!DOCTYPE html>
-<html lang="uz">
+
+<!doctype html>
+<html lang="kaa">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Beruniy virtual sayohati</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BERUNIY QR EXPEDITION</title>
 <style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f0f5ff;
-  color: #183153;
-}
-header {
-  background: #0756a5;
-  color: white;
-  padding: 35px 15px;
-  text-align: center;
-}
-h1 { font-size: 28px; }
-main {
-  padding: 25px;
-  text-align: center;
-}
-.card {
-  background: white;
-  padding: 25px;
-  margin: 20px auto;
-  border-radius: 15px;
-  max-width: 500px;
-  box-shadow: 0 3px 12px #ccd5e0;
-}
-button {
-  background: #0756a5;
-  color: white;
-  border: none;
-  padding: 14px 25px;
-  border-radius: 10px;
-  font-size: 17px;
-}
-footer {
-  text-align: center;
-  padding: 20px;
-}
+*{box-sizing:border-box}
+body{margin:0;font:16px Arial,sans-serif;background:#f3f6f5;color:#183044;line-height:1.6}
+header{position:sticky;top:0;background:#10283b;color:white;padding:14px;text-align:center;z-index:5}
+nav{display:flex;overflow:auto;gap:14px;padding:12px;background:#1c4855}
+nav a{color:white;white-space:nowrap;text-decoration:none;font-size:14px}
+.hero{padding:65px 20px;text-align:center;color:white;background:linear-gradient(135deg,#10283b,#287d75)}
+.hero h1{font-size:clamp(44px,10vw,76px);margin:5px}
+.hero p{font-size:19px}
+.btn{display:inline-block;background:#e8c987;color:#172b3a;text-decoration:none;padding:12px 20px;border-radius:30px;font-weight:bold}
+main{max-width:850px;margin:auto;padding:14px}
+section{background:white;padding:22px;margin:18px 0;border-radius:18px;box-shadow:0 5px 20px #18304412;scroll-margin-top:115px}
+.tag{font-size:12px;letter-spacing:2px;color:#268077;font-weight:bold}
+h2{color:#216b68}
+.visual{padding:25px;border-radius:14px;color:white;font-size:22px;font-weight:bold;background:linear-gradient(130deg,#1b4c57,#83a98f);margin:14px 0}
+.gold{background:linear-gradient(130deg,#59412c,#c49b60)}
+.blue{background:linear-gradient(130deg,#203c60,#789bb2)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.card{padding:15px;border-radius:12px;background:#f0f6f5}
+.note{background:#fff7e8;padding:14px;border-left:4px solid #d4ad63}
+button{display:block;width:100%;padding:12px;margin:8px 0;border:1px solid #cbd8d7;border-radius:10px;background:white;text-align:left;font-size:15px}
+.answer{font-weight:bold;color:#21775e}
+footer{text-align:center;background:#10283b;color:white;padding:25px}
+@media(max-width:560px){.grid{grid-template-columns:1fr}section{padding:18px}}
 </style>
 </head>
 <body>
 
-<header>
-<h1>🌍 Beruniy rayonı</h1>
-<p>Virtual turistik sayaxat</p>
-</header>
+<header><b>BERUNIY · QR VIRTUAL EXPEDITION</b></header>
+
+<nav>
+<a href="#intro">Kiris</a>
+<a href="#map">Rayon</a>
+<a href="#mountain">Taw</a>
+<a href="#pil">Pil qala</a>
+<a href="#sultan">Sultan Baba</a>
+<a href="#nature">Tábiyat</a>
+<a href="#scanner">QR Skaner</a>
+<a href="#route">Marshrut</a>
+<a href="#swot">SWOT</a>
+<a href="#quiz">Quiz</a>
+</nav>
+
+<div class="hero">
+<small>QARAQALPAQSTAN · IZERTLEW JOYBARI</small>
+<h1>BERUNIY</h1>
+<p>Tariyx. Tábiyat. Miyras.</p>
+<p>Bir rayon. Úsh túrli baylıq. Bir virtual sayaxat.</p>
+<a class="btn" href="#intro">Sayaxattı baslaw →</a>
+</div>
 
 <main>
-<div class="card">
-<h2>Saytımızǵa xosh kelipsiz!</h2>
-<p>Beruniy rayonınıń tariyxıy hám mádeniy orınları menen virtual tanısıń.</p>
-<button onclick="alert('Sayaxat baslandı!')">
-Sayaxattı baslaw
-</button>
+<section id="intro">
+<div class="tag">01 · KIRIS</div>
+<h2>Beruniy — tariyx hám tábiyattıń ushırasqan ornı</h2>
+<p>Bul virtual ekspediciya Beruniy rayonınıń tariyxıy esteliklerin, zıyarat orınların hám tábiyiy resursların tanıstıradı.</p>
+<div class="grid">
+<div class="card">🏛️ <b>Tariyx</b><p>Áyyemgi qala izleri.</p></div>
+<div class="card">⛰️ <b>Tábiyat</b><p>Taw hám dárya landshaftları.</p></div>
+<div class="card">🕌 <b>Miyras</b><p>Zıyarat mádeniyatı.</p></div>
+<div class="card">🧭 <b>Turizm</b><p>Jańa sayaxat baǵdarları.</p></div>
 </div>
+</section>
+
+<section id="map">
+<div class="tag">02 · GEOGRAFIYALÍQ ORNÍ</div>
+<h2>Beruniy rayonı</h2>
+<p>Beruniy rayonı Qaraqalpaqstan Respublikasında jaylasqan. Ashıq dereklerde rayon 1927-jılı shólkemlestirilgeni hám maydanı shama menen 3 950 km² ekeni kórsetiledi.</p>
+<div class="grid">
+<div class="card"><h2>1927</h2>Shólkemlestirilgen jıl</div>
+<div class="card"><h2>3 950 km²</h2>Rayon maydanı</div>
+</div>
+<p class="note">Bul bettegi karta sxemalıq túsindirme bolıp, navigaciya kartası emes.</p>
+</section>
+
+<section id="mountain">
+<div class="tag">03 · TÁBIYIY TURIZM</div>
+<h2>Sultan Uways taw tizbegi</h2>
+<div class="visual">⛰️ Sultan Uways tawları</div>
+<p>Taw landshaftları, ashıq keńislik hám átiraptaǵı tábiyat foto-sayaxat, tábiyattı baqlaw hám gid penen ekologiyalıq sayaxat ushın qızıqlı baǵdar bola aladı.</p>
+<p class="note">Tábiyatqa zıyan keltirmew hám qorǵalatuǵın aymaqlarda tek ruxsat etilgen jol menen júriw kerek.</p>
+</section>
+
+<section id="pil">
+<div class="tag">04 · ARXEOLOGIYALÍQ MIYRÁS</div>
+<h2>Pil qala — ótmishke ashılǵan tereze</h2>
+<div class="visual gold">🏰 Áyyemgi Pil qala</div>
+<p>Pil qala Beruniy qalasınıń arqa tárepindegi arxeologiyalıq estelik retinde tanıladı. Ol áyyemgi Xorezm tariyxı menen baylanıslı. Estelik aymaǵınan tariyxıy keramika buyımları tabılǵanı haqqında maǵlıwmatlar bar.</p>
+<p class="note"><b>Turistlik áhmiyeti:</b> tariyxqa qızıǵatuǵın turistler, studentler hám izertlewshiler ushın bilim beriw ornı.</p>
+</section>
+
+<section id="sultan">
+<div class="tag">05 · ZÍYARAT TURIZMI</div>
+<h2>Sultan Uways Baba kompleksi</h2>
+<div class="visual blue">🕌 Sultan Uways Baba</div>
+<p>Sultan Uways Baba kompleksi tariyxıy hám diniy-mádeniy miyras ornı. Bul jerde zıyarat mádeniyatı, jergilikli dástúrler hám estelik tariyxı menen tanısıw múmkin.</p>
+<ul>
+<li>Tariyxıy miyrastı úyreniw.</li>
+<li>Zıyarat mádeniyatına húrmet etiw.</li>
+<li>Jergilikli gid túsindirmesin paydalanıw.</li>
+</ul>
+</section>
+
+<section id="nature">
+<div class="tag">06 · EKOLOGIYALÍQ RESURSLAR</div>
+<h2>Ámiwdárya hám tábiyiy baylıqlar</h2>
+<div class="visual">🌿 Dárya, toǵay hám tábiyat</div>
+<p>Ámiwdárya aymaq ekologiyası hám landshaftı ushın áhmiyetli. Toǵay ekotizimleri, kóller hám shól landshaftları tábiyattı úyreniwge múmkinshilik beredi.</p>
+<div class="grid">
+<div class="card">🌊 <b>Ámiwdárya</b><p>Suw hám ekologiyalıq ózek.</p></div>
+<div class="card">🌳 <b>Toǵay</b><p>Ósimlik hám haywanat dúnyası.</p></div>
+<div class="card">🏜️ <b>Qızılqum</b><p>Shól landshaftı.</p></div>
+<div class="card">🦌 <b>Qorǵalatuǵın tábiyat</b><p>Biodiversitetti saqlaw.</p></div>
+</div>
+</section>
+
+<section id="qr">
+<div class="tag">07 · QR VIRTUAL SAYAXAT</div>
+<h2>QR — bilimge ashılǵan esik</h2>
+<p>QR-kod arqalı kirgen adam bólimlerdi telefonında ashıp oqıydı, marshrut penen tanısadı hám mini-quiz arqalı bilim sınaydı.</p>
+<div class="grid">
+<div class="card">1️⃣ QR-kodtı skanerleń.</div>
+<div class="card">2️⃣ Bólimlerdi ashıń.</div>
+<div class="card">3️⃣ Maǵlıwmatlardı oqıń.</div>
+<div class="card">4️⃣ Quizge juwap beriń.</div>
+</div>
+</section>
+
+<section id="scanner">
+<div class="tag">08 · QR SKANER</div>
+<h2>QR-kodtı skanerlew</h2>
+<p>Telefon kamerasına ruxsat beriń, QR-kodtı kameraǵa baǵdarlap oqıń.</p>
+
+<div id="qr-reader" style="width:100%;max-width:440px;margin:14px auto;border-radius:12px;overflow:hidden"></div>
+
+<button id="start-scan" type="button" style="background:#1c6b63;color:white;text-align:center;font-weight:bold">📷 Skanerdi baslaw</button>
+<button id="stop-scan" type="button" style="text-align:center">Skanerdi toqtatıw</button>
+
+<p id="scan-status" class="note" role="status">Skaner házir iske túsirilmegen.</p>
+
+<div id="scan-result" class="card" hidden>
+<b>Oqılǵan QR nátiyjesi:</b>
+<p id="scan-text" style="overflow-wrap:anywhere"></p>
+<a id="scan-open" class="btn" href="#" target="_blank" rel="noopener">Siltemeni ashıw</a>
+</div>
+
+<hr style="border:0;border-top:1px solid #dce5e3;margin:22px 0">
+
+<h2>Sayttıń QR-kodı</h2>
+<p>Bul QR-kodtı basqa telefon menen skanerlep, sayttı ashıwǵa boladı.</p>
+<div id="site-qr" style="display:flex;justify-content:center;background:white;padding:14px;border-radius:12px;min-height:170px;align-items:center">QR-kod júklenbekte...</div>
+<p id="site-url" style="font-size:13px;overflow-wrap:anywhere;text-align:center"></p>
+</section>
+
+<section id="route">
+<div class="tag">09 · TURISTLIK MARSHRUT</div>
+<h2>Bir kúnlik «Tariyx hám tábiyat» sayaxatı</h2>
+<p>Bul — joybarlıq usınıs. Naqty jol, waqıt, obyekttiń ashıq bolıwı hám kiriw ruqsatları sapar aldınan tekseriliwi kerek.</p>
+<ol>
+<li><b>09:00</b> — Beruniy qalasında tanısıw.</li>
+<li><b>10:00</b> — Pil qala tariyxı menen tanısıw.</li>
+<li><b>12:00</b> — Túski dem alıs.</li>
+<li><b>14:00</b> — Sultan Uways Baba kompleksi.</li>
+<li><b>16:00</b> — Ruxsat etilgen tábiyiy kóris ornı.</li>
+<li><b>17:30</b> — Juwmaqlaw hám qaytıw.</li>
+</ol>
+</section>
+
+<section id="swot">
+<div class="tag">10 · SWOT TALQÍLAW</div>
+<h2>Turizmdiń múmkinshilikleri hám mashqalaları</h2>
+<div class="grid">
+<div class="card"><b>Kúshli tárepleri</b><ul><li>Tariyxıy estelikler.</li><li>Tábiyiy resurslar.</li><li>Zıyarat baǵdarı.</li></ul></div>
+<div class="card"><b>Ázzi tárepleri</b><ul><li>Gid xızmetin jaqsılaw zárúrligi.</li><li>Sanlı maǵlıwmat jetispewi.</li></ul></div>
+<div class="card"><b>Imkaniyatlar</b><ul><li>QR-gid jaratıw.</li><li>Studentlik sayaxatlar.</li><li>Jergilikli xızmetler.</li></ul></div>
+<div class="card"><b>Qáwipler</b><ul><li>Esteliklerdiń buzılıwı.</li><li>Ekologiyalıq júkleme.</li><li>Tártipsiz turistlik háreket.</li></ul></div>
+</div>
+<p class="note">Bul — joybar toparınıń sapalıq SWOT bahalawı, rásmiy statistikalıq audit emes.</p>
+</section>
+
+<section id="conclusion">
+<div class="tag">11 · JUWMAQ</div>
+<h2>Beruniydi qalay tanıtamız?</h2>
+<p>Beruniydiń turizm rawajlanıwı ushın tariyxıy, zıyarat hám tábiyiy resurslardı birlestirgen mazmunlı turistlik ónim jaratıw kerek.</p>
+<ul>
+<li>Esteliklerge QR-gid jaratıw.</li>
+<li>Ruxsat etilgen turistlik marshrut dúziw.</li>
+<li>Jaslarǵa gidlik hám túsindiriw kónlikpelerin úyretiw.</li>
+<li>Mádeniy miyras hám tábiyattı qorǵaw.</li>
+</ul>
+<p class="note"><b>Juwmaqlaw sózi:</b> «Beruniy — tek ótmishti eske alatın aymaq emes. Ol tariyxın saqlap, tábiyatın qorǵap, keleshek turizmge jol ashıwı múmkin bolǵan aymaq».</p>
+</section>
+
+<section id="quiz">
+<div class="tag">QOSÍMSHA · MINI QUIZ</div>
+<h2>Bilimińizdi sınap kóriń</h2>
+
+<p><b>1. Beruniy rayonı qaysı jılı shólkemlestirilgen?</b></p>
+<button onclick="check(this,true)">1927-jılı</button>
+<button onclick="check(this,false)">1935-jılı</button>
+<p class="answer"></p>
+
+<p><b>2. Pil qala qanday estelik?</b></p>
+<button onclick="check(this,true)">Arxeologiyalıq estelik</button>
+<button onclick="check(this,false)">Tábiyiy kól</button>
+<p class="answer"></p>
+
+<p><b>3. Ekoturizmde tiykarǵı qaǵıyda?</b></p>
+<button onclick="check(this,true)">Tábiyatqa zıyan keltirmew</button>
+<button onclick="check(this,false)">Qorǵalǵan jerde qálegen jerde júriw</button>
+<p class="answer"></p>
+</section>
+
+<section>
+<div class="tag">DEREKLERDI TEKSERIW</div>
+<h2>Paydalanıw ushın ashıq derekler</h2>
+<p>Joybardı qorǵawdan aldın rayon hákimligi hám rásmiy turizm dereklerinen obyekttiń ataması, tariyxı, házirgi jaǵdayı hám kiriw múmkinshiligin qayta tekseriń. Dala saparı ótkerilmegen bolsa, bunı prezentaciyada ashıq aytıń.</p>
+</section>
 </main>
 
 <footer>
-<p>© 2026 Beruniy virtual sayaxatı</p>
+BERUNIY QR-EXPEDITION<br>
+Abdullaev Ulugbek · Embergenov Nurpolat
 </footer>
+
+<script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<script>
+function check(btn,ok){
+let p=btn.parentElement.querySelector('.answer');
+p.textContent=ok?'Durıs juwap! ✓':'Qayta oylap kóriń.';
+p.style.color=ok?'#21775e':'#a34b3b';
+}
+
+let qrScanner=null;
+let scannerRunning=false;
+
+const scanStatus=document.getElementById('scan-status');
+const scanResult=document.getElementById('scan-result');
+const scanText=document.getElementById('scan-text');
+const scanOpen=document.getElementById('scan-open');
+
+function onScanSuccess(decodedText){
+scanText.textContent=decodedText;
+scanResult.hidden=false;
+
+try{
+const parsed=new URL(decodedText);
+if(parsed.protocol==='http:'||parsed.protocol==='https:'){
+scanOpen.href=parsed.href;
+scanOpen.style.display='inline-block';
+}else{
+scanOpen.style.display='none';
+}
+}catch(e){
+scanOpen.style.display='none';
+}
+
+scanStatus.textContent='QR-kod sáttı oqıldı!';
+stopScanner();
+}
+
+async function startScanner(){
+if(!window.Html5Qrcode){
+scanStatus.textContent='Skaner júklenbedi. Internetti tekserip, betti jańalań.';
+return;
+}
+
+if(scannerRunning)return;
+
+try{
+if(!qrScanner)qrScanner=new Html5Qrcode('qr-reader');
+scanStatus.textContent='Kamera ashılıwda...';
+
+await qrScanner.start(
+{facingMode:'environment'},
+{fps:10,qrbox:{width:240,height:240}},
+onScanSuccess,
+function(){}
+);
+
+scannerRunning=true;
+scanStatus.textContent='Kamera islep tur. QR-kodtı kameraǵa baǵdarlań.';
+}catch(err){
+scanStatus.textContent='Kamera ashılmadı. Sayttı HTTPS arqalı ashıń hám kameraǵa ruxsat beriń.';
+}
+}
+
+async function stopScanner(){
+if(!qrScanner||!scannerRunning)return;
+
+try{
+await qrScanner.stop();
+scannerRunning=false;
+scanStatus.textContent='Skaner toqtatıldı.';
+}catch(err){
+scanStatus.textContent='Skanerdi toqtatıwda qátelik boldı.';
+}
+}
+
+document.getElementById('start-scan').addEventListener('click',startScanner);
+document.getElementById('stop-scan').addEventListener('click',stopScanner);
+
+const currentSiteUrl=window.location.href.split('#')[0];
+document.getElementById('site-url').textContent=currentSiteUrl;
+
+if(window.QRCode){
+document.getElementById('site-qr').innerHTML='';
+new QRCode(document.getElementById('site-qr'),{
+text:currentSiteUrl,
+width:180,
+height:180,
+correctLevel:QRCode.CorrectLevel.H
+});
+}else{
+document.getElementById('site-qr').textContent='QR-kod ushın internet baylanısın qosıń.';
+}
+</script>
 
 </body>
 </html>
+
+  
